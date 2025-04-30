@@ -1,0 +1,8 @@
+{
+  "bracketSameLine": true,
+  "trailingComma": "none",
+  "singleQuote": true,
+  "tailwindFunctions": ["cn"],
+  "printWidth": 100,
+  "plugins": ["prettier-plugin-tailwindcss"]
+}

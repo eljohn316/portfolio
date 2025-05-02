@@ -21,7 +21,8 @@ export default function Page() {
           </p>
           <div className="mt-14 space-x-4 lg:mt-16">
             <Link
-              href="#"
+              href="/resume.pdf"
+              target="_blank"
               className="inline-block rounded-md border border-blue-700 bg-white px-5 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50 md:text-base lg:px-6 lg:py-2.5">
               Resume
             </Link>

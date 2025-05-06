@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { ThemeButton } from '@/components/theme-button';
 import { MailIcon } from '@/components/icons';
 import { Technologies } from '@/components/technologies';
 import { Projects } from '@/components/projects';
@@ -8,32 +7,28 @@ import { Section, SectionDescription, SectionHeader, SectionHeading } from '@/co
 export default function Page() {
   return (
     <>
-      <header className="mx-auto flex min-h-svh max-w-2xl flex-col gap-y-2 px-4 py-10 sm:px-6">
-        <nav className="flex w-full justify-end">
-          <ThemeButton />
-        </nav>
-        <div className="flex flex-1 flex-col items-center justify-center">
-          <p className="font-mono text-lg font-semibold text-gray-700 lg:text-xl dark:text-zinc-300">
-            Hi, I&apos;m El John Bonga
-          </p>
-          <p className="mt-4 bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-center text-5xl leading-tight font-bold text-transparent lg:mt-6 lg:text-6xl">
-            I love building things for the web
-          </p>
-          <div className="mt-14 space-x-4 lg:mt-16">
-            <Link
-              href="/resume.pdf"
-              target="_blank"
-              className="inline-block rounded-md border border-blue-700 bg-white px-5 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50 md:text-base lg:px-6 lg:py-2.5">
-              Resume
-            </Link>
-            <Link
-              href="#projects"
-              className="inline-block rounded-md bg-blue-700 px-5 py-2 text-sm font-medium text-blue-50 hover:bg-blue-800 md:text-base lg:px-6 lg:py-2.5">
-              Projects
-            </Link>
-          </div>
+      <div className="mx-auto max-w-2xl px-4 py-28 text-center sm:px-6 lg:py-32">
+        <p className="font-mono text-lg font-semibold text-gray-700 lg:text-xl dark:text-zinc-300">
+          Hi, I&apos;m El John Bonga
+        </p>
+        <p className="mt-4 bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-5xl leading-tight font-bold text-transparent lg:mt-6 lg:text-6xl">
+          I love building things for the web
+        </p>
+        <div className="mt-14 space-x-4 lg:mt-16">
+          <Link
+            href="/resume.pdf"
+            target="_blank"
+            className="inline-block rounded-md border border-blue-700 bg-white px-5 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50 md:text-base lg:px-6 lg:py-2.5">
+            Resume
+          </Link>
+          <Link
+            href="#projects"
+            className="inline-block rounded-md bg-blue-700 px-5 py-2 text-sm font-medium text-blue-50 hover:bg-blue-800 md:text-base lg:px-6 lg:py-2.5">
+            Projects
+          </Link>
         </div>
-      </header>
+      </div>
+
       <main className="mx-auto max-w-2xl px-4 sm:px-6">
         <Section id="skills">
           <SectionHeader>
@@ -53,6 +48,7 @@ export default function Page() {
               These are the projects I&apos;ve built throughout my web development journey,
               showcasing my growth, skills, and creativity.
             </SectionDescription>
+            <p className="text-xs font-semibold text-blue-700">(More coming soon...)</p>
           </SectionHeader>
           <Projects />
         </Section>

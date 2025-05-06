@@ -3,6 +3,8 @@ import { Onest, Fira_Code } from 'next/font/google';
 import { ThemeProvider } from '@/app/theme-provider';
 
 import '@/app/globals.css';
+import { GithubLink } from '@/components/github-link';
+import { ThemeButton } from '@/components/theme-button';
 
 const fontSans = Onest({
   subsets: ['latin'],
@@ -33,6 +35,10 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange>
+          <nav className="mx-auto flex max-w-2xl items-center justify-end gap-x-6 px-4 pt-10 sm:px-6">
+            <GithubLink />
+            <ThemeButton />
+          </nav>
           {children}
         </ThemeProvider>
       </body>

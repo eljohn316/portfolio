@@ -160,7 +160,7 @@ export function Projects() {
               <Link
                 href={project.links.source}
                 target="_blank"
-                className="inline-flex items-center gap-x-2.5 rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200">
+                className="inline-flex items-center gap-x-2.5 rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 dark:text-gray-50 dark:hover:text-gray-700">
                 Source code
                 <GithubIcon className="size-5" aria-hidden="true" />
               </Link>

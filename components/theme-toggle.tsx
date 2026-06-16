@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useTheme } from '@wrksz/themes/client';
-import { MoonIcon, SunIcon } from '@/components/icons';
+import { HugeiconsIcon } from '@hugeicons/react';
+import { Moon02Icon, Sun01Icon } from '@hugeicons/core-free-icons';
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
@@ -21,15 +22,15 @@ export function ThemeToggle() {
         type="button"
         className="text-zinc-400 hover:text-zinc-500 dark:hidden"
         onClick={() => setTheme('dark')}>
+        <HugeiconsIcon icon={Moon02Icon} className="size-6" />
         <span className="sr-only">Toggle dark mode</span>
-        <MoonIcon className="size-5" aria-hidden="true" />
       </button>
       <button
         type="button"
         className="hidden text-zinc-200 hover:text-zinc-300 dark:inline-block"
         onClick={() => setTheme('light')}>
+        <HugeiconsIcon icon={Sun01Icon} className="size-6" />
         <span className="sr-only">Toggle light mode</span>
-        <SunIcon className="size-5" aria-hidden="true" />
       </button>
     </>
   );

@@ -8,6 +8,7 @@ import {
 } from '@hugeicons/core-free-icons';
 import { Container } from '@/components/container';
 import { ThemeToggle } from '@/components/theme-toggle';
+import { TechStack } from '@/components/pages/tech-stack';
 
 export default function Home() {
   return (
@@ -60,6 +61,7 @@ export default function Home() {
           </div>
         </div>
       </Container>
+      <TechStack />
     </>
   );
 }

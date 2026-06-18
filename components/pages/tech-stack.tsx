@@ -15,7 +15,8 @@ import {
   PostgresIcon,
   ReactIcon,
   TailwindCSSIcon,
-  TypescriptIcon
+  TypescriptIcon,
+  FastAPIIcon
 } from '@/components/ui/dev-icons';
 import { TechBadge } from '@/components/ui/tech-badge';
 
@@ -60,6 +61,10 @@ const technologies: Technology[] = [
   {
     name: 'Express',
     icon: ExpressIcon
+  },
+  {
+    name: 'FastAPI',
+    icon: FastAPIIcon
   },
   {
     name: 'Flask',

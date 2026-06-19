@@ -22,12 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${fontMono.variable} antialiased`} suppressHydrationWarning>
-      <body className="bg-zinc-50 py-8 sm:py-10 dark:bg-zinc-900">
+      <body className="overflow-y-scroll bg-zinc-50 py-8 sm:py-10 dark:bg-zinc-900">
         <Providers>
           <Container className="flex justify-end">
             <ThemeToggle />
           </Container>
-          {children}
+          <div className="mt-18 sm:mt-20">{children}</div>
         </Providers>
       </body>
     </html>

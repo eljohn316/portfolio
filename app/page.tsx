@@ -7,7 +7,7 @@ import { Footer } from '@/components/pages/footer';
 export default function Home() {
   return (
     <>
-      <div className="mt-18 space-y-20 sm:mt-20 sm:space-y-24">
+      <div className="space-y-20 sm:space-y-24">
         <Intro />
         <TechStack />
         <Projects />

@@ -27,8 +27,8 @@ type Project = {
     name: string;
     icon: (props: React.ComponentProps<'svg'>) => JSX.Element;
   }[];
-  demoLink?: string;
-  sourceCodeLink?: string;
+  demo?: string;
+  sourceCode?: string;
 };
 
 const projects: Project[] = [
@@ -55,7 +55,7 @@ const projects: Project[] = [
         icon: SQliteIcon
       }
     ],
-    demoLink: 'https://pypi.org/project/jobty/'
+    demo: 'https://pypi.org/project/jobty/'
   },
   {
     name: 'Savory Point',
@@ -80,8 +80,8 @@ const projects: Project[] = [
         icon: PostgresIcon
       }
     ],
-    demoLink: 'https://github.com/eljohn316/savory-point',
-    sourceCodeLink: 'https://savory-point.vercel.app/'
+    demo: 'https://savory-point.vercel.app/',
+    sourceCode: 'https://github.com/eljohn316/savory-point'
   },
   {
     name: 'Invoicy',
@@ -118,8 +118,8 @@ const projects: Project[] = [
         icon: TailwindCSSIcon
       }
     ],
-    demoLink: 'https://invoicy-five.vercel.app/',
-    sourceCodeLink: 'https://github.com/eljohn316/invoicy-backend'
+    demo: 'https://invoicy-five.vercel.app/',
+    sourceCode: 'https://github.com/eljohn316/invoicy-backend'
   }
 ];
 
@@ -163,20 +163,20 @@ export function Projects() {
                     />
                   ))}
                 </div>
-                {(project.demoLink || project.sourceCodeLink) && (
+                {(project.demo || project.sourceCode) && (
                   <div className="mt-6 flex items-center gap-x-6 border-t border-zinc-300 pt-4 dark:border-zinc-700">
-                    {project.demoLink && (
+                    {project.demo && (
                       <Link
-                        href={project.demoLink}
+                        href={project.demo}
                         target="_blank"
                         className="inline-flex items-center gap-x-2 text-[13px] text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-400/90">
                         <HugeiconsIcon icon={LinkSquare01Icon} className="-ml-1 size-4 shrink-0" />
                         Demo
                       </Link>
                     )}
-                    {project.sourceCodeLink && (
+                    {project.sourceCode && (
                       <Link
-                        href={project.sourceCodeLink}
+                        href={project.sourceCode}
                         target="_blank"
                         className="inline-flex items-center gap-x-2 text-[13px] text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-400/90">
                         <HugeiconsIcon icon={GithubIcon} className="-ml-1 size-4 shrink-0" />

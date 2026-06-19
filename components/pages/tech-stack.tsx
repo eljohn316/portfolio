@@ -1,5 +1,5 @@
 import { JSX } from 'react';
-import { Container } from '@/components/container';
+import { Container } from '@/components/layout/container';
 import {
   JavascriptIcon,
   PythonIcon,

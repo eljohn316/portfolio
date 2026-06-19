@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Container } from '@/components/container';
+import { Container } from '@/components/layout/container';
 import { MailAtSign01Icon } from '@hugeicons/core-free-icons';
 import { HugeiconsIcon } from '@hugeicons/react';
 

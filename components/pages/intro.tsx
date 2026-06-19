@@ -6,8 +6,8 @@ import {
   LinkedinIcon,
   MailAtSign01Icon
 } from '@hugeicons/core-free-icons';
-import { Container } from '@/components/container';
-import { ThemeToggle } from '@/components/theme-toggle';
+import { Container } from '@/components/layout/container';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 type Link = {
   text: string;

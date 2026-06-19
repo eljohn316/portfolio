@@ -5,8 +5,10 @@ import { HugeiconsIcon } from '@hugeicons/react';
 import { GithubIcon, LinkSquare01Icon } from '@hugeicons/core-free-icons';
 import { Container } from '@/components/layout/container';
 import {
+  ExpressIcon,
   FastAPIIcon,
   NextjsIcon,
+  NodejsIcon,
   PostgresIcon,
   PrismaIcon,
   PydanticIcon,
@@ -120,6 +122,43 @@ const projects: Project[] = [
     ],
     demo: 'https://invoicy-five.vercel.app/',
     sourceCode: 'https://github.com/eljohn316/invoicy-backend'
+  },
+  {
+    name: 'Product Request Feedback App',
+    image: '/product-request-feedback.png',
+    description: 'Product request request and feedback application',
+    technologies: [
+      {
+        name: 'Node',
+        icon: NodejsIcon
+      },
+      {
+        name: 'Express',
+        icon: ExpressIcon
+      },
+      {
+        name: 'Prisma',
+        icon: PrismaIcon
+      },
+      {
+        name: 'PostgreSQL',
+        icon: PostgresIcon
+      },
+      {
+        name: 'React',
+        icon: ReactIcon
+      },
+      {
+        name: 'TypeScript',
+        icon: TypescriptIcon
+      },
+      {
+        name: 'TailwindCSS',
+        icon: TailwindCSSIcon
+      }
+    ],
+    demo: 'https://product-request-feedback-app.vercel.app/',
+    sourceCode: 'https://github.com/eljohn316/product-request-feedback-app'
   }
 ];
 

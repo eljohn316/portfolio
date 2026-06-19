@@ -16,7 +16,7 @@ type Link = {
 const links: Link[] = [
   {
     text: 'Resume',
-    href: 'https://drive.google.com/file/d/1nJUsRk8eYq3Nyj4IPXeFQYJ9Q9jab189/view?usp=sharing',
+    href: 'https://drive.google.com/file/d/1VFYVfqOC7xfuTHowYCXIzOe0r8kzPNKp/view?usp=sharing',
     icon: DocumentAttachmentIcon
   },
   {

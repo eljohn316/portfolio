@@ -1,6 +1,7 @@
 import { Intro } from '@/components/pages/intro';
-import { Projects } from '@/components/pages/projects';
 import { TechStack } from '@/components/pages/tech-stack';
+import { Projects } from '@/components/pages/projects';
+import { Contact } from '@/components/pages/contact';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Intro />
       <TechStack />
       <Projects />
+      <Contact />
     </div>
   );
 }
